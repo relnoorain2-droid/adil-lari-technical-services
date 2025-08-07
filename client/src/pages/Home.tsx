@@ -43,16 +43,14 @@ export default function Home() {
             Professional Cleaning, Painting, Plaster & Plumbing Services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/services">
-              <a className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
-                Our Services
-              </a>
+            <Link href="/services" className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 inline-block text-center">
+              Our Services
             </Link>
             <a 
               href="https://wa.me/971547965012" 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-accent hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105"
+              className="bg-accent hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 inline-block text-center"
             >
               <i className="fab fa-whatsapp mr-2"></i>WhatsApp Us
             </a>
