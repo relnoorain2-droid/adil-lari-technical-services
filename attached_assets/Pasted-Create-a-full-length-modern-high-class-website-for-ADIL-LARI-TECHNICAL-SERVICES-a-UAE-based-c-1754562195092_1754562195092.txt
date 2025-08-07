@@ -1,0 +1,156 @@
+Create a full-length, modern, high-class website for **ADIL LARI TECHNICAL SERVICES**, a UAE-based company specializing in cleaning, painting, plaster, plumbing, and sanitary installation.
+
+---
+
+## 🏢 Company Information:
+
+- **Company Name:** ADIL LARI TECHNICAL SERVICES
+- **Activity:** Technical & Maintenance Services
+- **Address:** Office No. 101-195, owned by Tayeb Mohammed Ibrahim, Deira, Al Khabeesi, UAE
+- **WhatsApp / Mobile:** +971 54 796 5012
+- **Email:** adillari274502@gmail.com
+
+---
+
+## 🌐 Website Goal:
+
+We want a premium and professional website that showcases trust, quality, and modernity. It should include **long homepage sections**, **3D/scroll-based animations**, and be **image-driven** to appeal to commercial and residential clients.
+
+---
+
+## ✅ Pages Required:
+- Home
+- About Us
+- Our Services
+- Gallery
+- Contact
+
+---
+
+## 🏠 HOME PAGE STRUCTURE (Long Scroll):
+
+Design the homepage as a **long landing page** with multiple scrollable sections:
+
+1. **Hero Section:**
+   - Fullscreen background with overlay
+   - Slogan text like: “Trusted Technical Services in the Heart of Dubai”
+   - CTA Buttons: “Our Services” & “WhatsApp Us”
+   - Subtle animated background (parallax or video optional)
+
+2. **About Company:**
+   - Image + Text side-by-side
+   - Highlight company history, mission, and what sets us apart
+   - Include icons for Experience, Quality, Fast Delivery
+
+3. **Our Core Services (cards/tiles with icons & hover effects):**
+   - Cleaning Services
+   - Floor & Wall Painting
+   - Plaster Work
+   - Plumbing & Sanitary Installation
+   - Each service should show an image, icon, title, and short description
+
+4. **Why Choose Us (icons section):**
+   - Reason 1: Professional Technicians
+   - Reason 2: On-Time Completion
+   - Reason 3: Competitive Pricing
+   - Reason 4: Dubai-wide Coverage
+   - With fade-in animation on scroll
+
+5. **Before/After Slider Section (Gallery style):**
+   - Side-by-side image slider to show transformation (e.g., painting, cleaning)
+
+6. **Testimonials / Client Reviews Section:**
+   - 3 client reviews with names, photos (use dummy if needed), and stars
+
+7. **Call to Action:**
+   - Big banner with “Need urgent service? Contact us now on WhatsApp”
+   - Button links to `https://wa.me/971547965012`
+
+8. **Contact Summary:**
+   - Office Address, Email, Mobile, WhatsApp
+   - Mini embedded map of Deira Al Khabeesi (Dubai)
+
+---
+
+## 🖼️ IMAGE MANAGEMENT SYSTEM:
+
+- All image links used in the website (e.g., in banners, services, gallery, etc.) should be loaded via a **single centralized file** like:
+  - `images.json` or `image-config.js`
+- This file should contain all the image URLs and keys
+- Inside the pages, images should be referenced via this config (e.g., `images["heroBanner"]`)
+- This makes it easy to update images in GitHub without editing page-by-page
+
+---
+
+## 💬 Sticky WhatsApp Chat:
+
+- Add a sticky **WhatsApp logo button** on **bottom-right corner**
+- Always visible on scroll
+- Link it to: `https://wa.me/971547965012`
+- Use official WhatsApp icon or minimal floating icon
+
+---
+
+## 💡 Animations:
+
+- Use scroll animations, fade-ins, hover effects
+- For hero text, use sliding or zoom-in text
+- Animate icons and service cards on hover or on scroll
+- Keep animations lightweight for speed
+
+---
+
+## 📱 Responsive Layout:
+
+- Must be fully responsive
+- Optimized for:
+  - iPhones
+  - Android devices
+  - iPads
+  - Desktop and large screens
+
+---
+
+## 📩 Footer (Sticky Elements + Info):
+
+- Include:
+  - Company Name
+  - Office Address
+  - Email (clickable)
+  - WhatsApp link and icon
+- Sticky WhatsApp button should float on the right bottom corner
+- Add copyright:
+  `© 2025 ADIL LARI TECHNICAL SERVICES. All Rights Reserved.`
+
+---
+
+## 📷 Gallery Page (optional):
+
+- Grid layout with hover zoom
+- Each image linked from the centralized image config file
+
+---
+
+## 🧠 Notes:
+
+- Use professional images related to each service (cleaning, plumbing, painting, plaster work)
+- If real images not available, use **Google or royalty-free placeholder images**
+- Use a modern UI kit or styling system for consistency
+
+---
+
+## 📦 Tech Recommendations (for developer export):
+
+- Use modern tech (HTML, CSS, JS, Tailwind or Bootstrap if applicable)
+- Keep all image URLs and text content editable for GitHub collaboration
+
+---
+
+Generate full code or visual preview based on this structure.
+
+here is logo link :  https://imgur.com/HKsFAan
+please use this logo header and footer everywhre need 
+
+aslo add whatsap catlog in home page feel like watsapp catlog once click redirect to watsapp catlog 
+
+all product relete to website as mentin above 
