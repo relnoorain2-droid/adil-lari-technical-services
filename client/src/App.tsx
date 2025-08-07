@@ -10,8 +10,11 @@ import Services from "@/pages/Services";
 import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 function Router() {
+  useScrollToTop();
+  
   return (
     <Layout>
       <Switch>
