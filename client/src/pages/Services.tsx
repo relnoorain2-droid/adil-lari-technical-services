@@ -4,7 +4,7 @@ export default function Services() {
   const services = [
     {
       title: "Cleaning Services",
-      image: imageConfig.cleaning1,
+      image: imageConfig.cleaningServices,
       icon: "fas fa-broom",
       description: "Comprehensive cleaning solutions for residential and commercial properties",
       features: [
@@ -18,8 +18,8 @@ export default function Services() {
       whatsappText: "I'm interested in Cleaning Services"
     },
     {
-      title: "Painting & Wall Work",
-      image: imageConfig.painting1,
+      title: "Floor & Wall Painting",
+      image: imageConfig.paintingServices,
       icon: "fas fa-paint-roller",
       description: "Professional painting services for interior and exterior surfaces",
       features: [
@@ -34,7 +34,7 @@ export default function Services() {
     },
     {
       title: "Plaster Work",
-      image: imageConfig.painting2,
+      image: imageConfig.plasterWork,
       icon: "fas fa-trowel",
       description: "Expert plastering services for smooth and durable wall finishes",
       features: [
@@ -49,7 +49,7 @@ export default function Services() {
     },
     {
       title: "Plumbing & Sanitary Installation",
-      image: imageConfig.plumbing1,
+      image: imageConfig.plumbingSanitary,
       icon: "fas fa-wrench",
       description: "Complete plumbing solutions and sanitary installations",
       features: [

@@ -31,32 +31,65 @@ export function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen">
+      {/* Top Bar */}
+      <div className="bg-primary text-white py-2 text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center">
+                <i className="fas fa-phone mr-2"></i>
+                <span>+971524297581</span>
+              </div>
+              <div className="flex items-center">
+                <i className="fas fa-envelope mr-2"></i>
+                <span>adillari274502@gmail.com</span>
+              </div>
+              <div className="hidden sm:flex items-center">
+                <i className="fas fa-map-marker-alt mr-2"></i>
+                <span>Dubai, UAE</span>
+              </div>
+            </div>
+            <div className="flex items-center space-x-3">
+              <a href="#" className="hover:text-gray-300 transition-colors">
+                <i className="fab fa-facebook text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-gray-300 transition-colors">
+                <i className="fab fa-instagram text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full backdrop-blur-sm shadow-sm z-50 transition-all duration-300 ${
+      <nav className={`fixed top-8 w-full backdrop-blur-sm shadow-sm z-50 transition-all duration-300 ${
         scrolled ? 'bg-white/95' : 'bg-white/95'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <img 
                 src={imageConfig.logo} 
                 alt="ADIL LARI TECHNICAL SERVICES Logo" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
-              <span className="ml-3 text-lg font-bold text-gray-900">ADIL LARI TECHNICAL</span>
+              <div className="ml-3">
+                <div className="text-xl font-bold text-accent">ADIL LARI</div>
+                <div className="text-sm text-gray-600 font-semibold">TECHNICAL SERVICES</div>
+              </div>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
+              <div className="flex items-center space-x-8">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`transition-colors ${
+                    className={`font-medium transition-colors text-sm uppercase tracking-wide ${
                       location === item.href
                         ? 'text-primary'
-                        : 'text-gray-600 hover:text-primary'
+                        : 'text-gray-700 hover:text-primary'
                     }`}
                   >
                     {item.name}
@@ -66,9 +99,9 @@ export function Layout({ children }: LayoutProps) {
                   href="https://wa.me/971547965012" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-accent text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+                  className="bg-accent text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-all transform hover:scale-105 font-semibold"
                 >
-                  <i className="fab fa-whatsapp mr-2"></i>WhatsApp
+                  Get a Free Quote
                 </a>
               </div>
             </div>
@@ -77,7 +110,7 @@ export function Layout({ children }: LayoutProps) {
             <div className="md:hidden">
               <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-gray-700 hover:text-primary"
+                className="text-gray-700 hover:text-primary p-2"
               >
                 <i className="fas fa-bars text-xl"></i>
               </button>
@@ -117,7 +150,7 @@ export function Layout({ children }: LayoutProps) {
       </nav>
 
       {/* Main Content */}
-      <main className="pt-16">
+      <main className="pt-28">
         {children}
       </main>
 

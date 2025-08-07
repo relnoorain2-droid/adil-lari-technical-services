@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
 import { imageConfig } from "@/lib/imageConfig";
+import { HeroSlider } from "@/components/HeroSlider";
 
 export default function Home() {
   useEffect(() => {
@@ -25,43 +26,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 parallax-bg" 
-          style={{ backgroundImage: `url('${imageConfig.heroBg}')` }}
-        ></div>
-        <div className="absolute inset-0 bg-black/40"></div>
-        
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
-            Trusted Technical Services
-            <span className="block text-accent">in the Heart of Dubai</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in">
-            Professional Cleaning, Painting, Plaster & Plumbing Services
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/services" className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 inline-block text-center">
-              Our Services
-            </Link>
-            <a 
-              href="https://wa.me/971547965012" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-accent hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 inline-block text-center"
-            >
-              <i className="fab fa-whatsapp mr-2"></i>WhatsApp Us
-            </a>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <i className="fas fa-chevron-down text-white text-2xl"></i>
-        </div>
-      </section>
+    <div className="-mt-28">
+      {/* Hero Slider Section */}
+      <HeroSlider />
 
       {/* About Company Section */}
       <section className="py-20 bg-gray-50">
@@ -125,7 +92,7 @@ export default function Home() {
             {/* Cleaning Services */}
             <div className="reveal group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
               <img 
-                src={imageConfig.cleaning1} 
+                src={imageConfig.cleaningServices} 
                 alt="Professional cleaning services in Dubai" 
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -149,7 +116,7 @@ export default function Home() {
             {/* Painting Services */}
             <div className="reveal group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
               <img 
-                src={imageConfig.painting1} 
+                src={imageConfig.paintingServices} 
                 alt="Professional painting and wall services" 
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -173,7 +140,7 @@ export default function Home() {
             {/* Plaster Work */}
             <div className="reveal group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
               <img 
-                src={imageConfig.painting2} 
+                src={imageConfig.plasterWork} 
                 alt="Professional plaster work and wall preparation" 
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -197,7 +164,7 @@ export default function Home() {
             {/* Plumbing & Sanitary */}
             <div className="reveal group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
               <img 
-                src={imageConfig.plumbing1} 
+                src={imageConfig.plumbingSanitary} 
                 alt="Professional plumbing and sanitary installation" 
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -214,6 +181,105 @@ export default function Home() {
                   className="text-primary font-medium hover:text-blue-700 transition-colors"
                 >
                   Learn More <i className="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Special Offers Section */}
+      <section className="py-20 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 reveal">
+            <h2 className="text-4xl font-bold text-primary mb-4">SPECIAL OFFERS</h2>
+            <div className="w-24 h-1 bg-accent mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* AC Duct Cleaning Offer */}
+            <div className="reveal group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64">
+                <img 
+                  src={imageConfig.officeDeepCleaning}
+                  alt="AC Duct Cleaning Service" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold mb-2">AC Duct Cleaning</h3>
+                </div>
+                <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg">
+                  30% off
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Professional AC duct cleaning service with advanced equipment and certified technicians.</p>
+                <a 
+                  href="https://wa.me/971547965012?text=I'm interested in your AC Duct Cleaning 30% off offer" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+                >
+                  Get Offer
+                </a>
+              </div>
+            </div>
+
+            {/* Home Painting Offer */}
+            <div className="reveal group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64">
+                <img 
+                  src={imageConfig.paintingPlasterWork}
+                  alt="Home Painting Service" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold mb-2">Home Painting</h3>
+                </div>
+                <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg">
+                  30% off
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Complete home painting solutions with premium paints and professional finish guarantee.</p>
+                <a 
+                  href="https://wa.me/971547965012?text=I'm interested in your Home Painting 30% off offer" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+                >
+                  Get Offer
+                </a>
+              </div>
+            </div>
+
+            {/* Kitchen Renovation Offer */}
+            <div className="reveal group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64">
+                <img 
+                  src={imageConfig.plumbingSanitary}
+                  alt="Kitchen Renovation Service" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold mb-2">Kitchen Renovation</h3>
+                </div>
+                <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg">
+                  30% off
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">Complete kitchen renovation including plumbing, electrical, and finishing work.</p>
+                <a 
+                  href="https://wa.me/971547965012?text=I'm interested in your Kitchen Renovation 30% off offer" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+                >
+                  Get Offer
                 </a>
               </div>
             </div>

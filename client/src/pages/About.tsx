@@ -46,7 +46,7 @@ export default function About() {
             </div>
             <div>
               <img 
-                src={imageConfig.aboutImage} 
+                src={imageConfig.heroSlider1} 
                 alt="Our professional team at work" 
                 className="rounded-2xl shadow-2xl"
               />

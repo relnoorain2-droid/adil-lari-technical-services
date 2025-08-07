@@ -6,38 +6,48 @@ export default function Gallery() {
 
   const galleryImages = [
     {
-      src: imageConfig.cleaning1,
-      title: "Office Cleaning",
+      src: imageConfig.cleaningServices,
+      title: "Professional Cleaning Services",
       category: "Cleaning"
     },
     {
-      src: imageConfig.cleaning2,
-      title: "Deep Cleaning Service",
+      src: imageConfig.officeDeepCleaning,
+      title: "Office Deep Cleaning",
       category: "Cleaning"
     },
     {
-      src: imageConfig.painting1,
+      src: imageConfig.paintingServices,
       title: "Interior Painting",
       category: "Painting"
     },
     {
-      src: imageConfig.painting2,
-      title: "Wall Finishing",
+      src: imageConfig.paintingPlasterWork,
+      title: "Painting & Plaster Work",
       category: "Painting"
     },
     {
-      src: imageConfig.plumbing1,
-      title: "Bathroom Installation",
+      src: imageConfig.plumbingSanitary,
+      title: "Plumbing & Sanitary Installation",
       category: "Plumbing"
     },
     {
-      src: imageConfig.plumbing2,
-      title: "Plumbing Services",
-      category: "Plumbing"
+      src: imageConfig.plasterWork,
+      title: "Professional Plaster Work",
+      category: "Plaster"
     },
     {
-      src: imageConfig.aboutImage,
-      title: "Professional Team",
+      src: imageConfig.heroSlider1,
+      title: "Professional Team at Work",
+      category: "Team"
+    },
+    {
+      src: imageConfig.heroSlider2,
+      title: "Quality Craftsmanship",
+      category: "Team"
+    },
+    {
+      src: imageConfig.heroSlider3,
+      title: "Modern Equipment",
       category: "Team"
     },
     {
@@ -49,10 +59,20 @@ export default function Gallery() {
       src: imageConfig.beforeAfter1After,
       title: "After Renovation",
       category: "Before/After"
+    },
+    {
+      src: imageConfig.beforeAfter2Before,
+      title: "Before Plaster Work",
+      category: "Before/After"
+    },
+    {
+      src: imageConfig.beforeAfter2After,
+      title: "After Painting",
+      category: "Before/After"
     }
   ];
 
-  const categories = ["All", "Cleaning", "Painting", "Plumbing", "Before/After", "Team"];
+  const categories = ["All", "Cleaning", "Painting", "Plumbing", "Plaster", "Before/After", "Team"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredImages = activeCategory === "All" 
