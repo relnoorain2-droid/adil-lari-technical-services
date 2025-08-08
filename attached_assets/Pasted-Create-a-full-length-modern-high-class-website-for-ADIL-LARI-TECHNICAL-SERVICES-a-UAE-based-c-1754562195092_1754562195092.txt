@@ -8,7 +8,7 @@ Create a full-length, modern, high-class website for **ADIL LARI TECHNICAL SERVI
 - **Activity:** Technical & Maintenance Services
 - **Address:** Office No. 101-195, owned by Tayeb Mohammed Ibrahim, Deira, Al Khabeesi, UAE
 - **WhatsApp / Mobile:** +971 54 796 5012
-- **Email:** adillari274502@gmail.com
+- **Email:** laritechnicalservices@gmail.com
 
 ---
 
@@ -152,5 +152,6 @@ here is logo link :  https://imgur.com/HKsFAan
 please use this logo header and footer everywhre need 
 
 aslo add whatsap catlog in home page feel like watsapp catlog once click redirect to watsapp catlog 
+
 
 all product relete to website as mentin above 
