@@ -103,10 +103,10 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                       <a 
-                        href="mailto:adillari274502@gmail.com" 
+                        href="mailto:laritechnicalservices@gmail.com" 
                         className="text-primary hover:text-blue-700 transition-colors"
                       >
-                        adillari274502@gmail.com
+                        laritechnicalservices@gmail.com
                       </a>
                     </div>
                   </div>
