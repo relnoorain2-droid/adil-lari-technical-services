@@ -38,11 +38,11 @@ export function Layout({ children }: LayoutProps) {
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <i className="fas fa-phone mr-2"></i>
-                <span>+971524297581</span>
+                <span>+971547965012</span>
               </div>
               <div className="flex items-center">
                 <i className="fas fa-envelope mr-2"></i>
-                <span>adillari274502@gmail.com</span>
+                <span>laritechnicalservices@gmail.com</span>
               </div>
               <div className="hidden sm:flex items-center">
                 <i className="fas fa-map-marker-alt mr-2"></i>
@@ -50,16 +50,67 @@ export function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="flex items-center space-x-3">
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                <i className="fab fa-facebook text-lg"></i>
-              </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                <i className="fab fa-instagram text-lg"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/share/16aT4UPpTU/?mibextid=qi2Omg"
+    className="hover:text-gray-300 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-facebook text-lg"></i>
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/adil_lari_technical_services?igsh=Mml2dWdxYnVncnZj"
+    className="hover:text-gray-300 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-instagram text-lg"></i>
+  </a>
+
+  {/* WhatsApp Channel */}
+  <a
+    href="https://whatsapp.com/channel/0029VbAySfmKrWQq29VBMa1y"
+    className="hover:text-gray-300 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-whatsapp text-lg"></i>
+  </a>
+
+  {/* Telegram */}
+  <a
+    href="https://t.me/adillaritechnicalservices"
+    className="hover:text-gray-300 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-telegram text-lg"></i>
+  </a>
+
+  {/* X (Twitter) */}
+  <a
+    href="https://x.com/ALT_SERVICES"
+    className="hover:text-gray-300 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-twitter text-lg"></i>
+  </a>
+
+  {/* TikTok */}
+  <a
+    href="https://www.tiktok.com/@adillaritechnicalservice?_t=ZS-8wxeO68Zw1v&_r=1"
+    className="hover:text-gray-300 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-tiktok text-lg"></i>
+  </a>
+</div>
+
 
       {/* Navigation */}
       <nav className={`fixed top-8 w-full backdrop-blur-sm shadow-sm z-50 transition-all duration-300 ${
