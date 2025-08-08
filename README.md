@@ -17,7 +17,7 @@ A premium, professional website for ADIL LARI TECHNICAL SERVICES, a UAE-based te
 - **Company Name**: ADIL LARI TECHNICAL SERVICES
 - **Location**: Office No. 101-195, Deira, Al Khabeesi, UAE
 - **WhatsApp/Mobile**: +971 54 796 5012
-- **Email**: adillari274502@gmail.com
+- **Email**: laritechnicalservices@gmail.com
 
 ## 🛠 Services Offered
 
@@ -114,7 +114,7 @@ The website features comprehensive WhatsApp integration:
 For website support or technical inquiries about ADIL LARI TECHNICAL SERVICES:
 
 - **WhatsApp**: [+971 54 796 5012](https://wa.me/971547965012)
-- **Email**: adillari274502@gmail.com
+- **Email**: laritechnicalservices@gmail.com
 - **Location**: Deira, Al Khabeesi, UAE
 
 ---
