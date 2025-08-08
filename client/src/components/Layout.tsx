@@ -232,7 +232,7 @@ export function Layout({ children }: LayoutProps) {
                   <i className="fab fa-whatsapp"></i>
                 </a>
                 <a 
-                  href="mailto:adillari274502@gmail.com" 
+                  href="mailto:laritechnicalservices@gmail.com" 
                   className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 >
                   <i className="fas fa-envelope"></i>
@@ -263,7 +263,7 @@ export function Layout({ children }: LayoutProps) {
               <div className="space-y-2 text-gray-400">
                 <p><i className="fas fa-map-marker-alt mr-2"></i>Deira, Al Khabeesi, UAE</p>
                 <p><i className="fab fa-whatsapp mr-2"></i>+971 54 796 5012</p>
-                <p><i className="fas fa-envelope mr-2"></i>adillari274502@gmail.com</p>
+                <p><i className="fas fa-envelope mr-2"></i>laritechnicalservices@gmail.com</p>
               </div>
             </div>
           </div>
